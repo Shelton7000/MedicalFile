@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.1"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.2"/>
+  <id root="2.16.840.1.113883.19.5" extension="996-756-495"/>
+  <code code="34133-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Consultation note"/>
+  <title>Health Insurance Claim Note</title>
+  <effectiveTime value="20000407130000+0500"/>
+  <confidentialityCode code="2.16.840.1.113883.1.11.16926 " codeSystem="2.16.840.1.113883.5.25"/>
+  <languageCode code="2.16.840.1.113883.1.11.11526"/>
+  <versionNumber value="777"/>
+  <recordTarget>
+    <patientRole>
+      <id root="2.16.840.1.113883.19.5" extension="996-756-495"/>
+      <addr><city>NY</city></addr>
+      <telecom value="localhost/P3a"/>
+      <patient>
+        <name><given>Henry</given><family>Levin</family><suffix>the 7th</suffix></name>
+        <administrativeGenderCode code="2.16.840.1.113883.1.11.1 "/>
+        <birthTime value="19320924"/>
+        <guardian>
+          <guardianPerson>
+            <name><given>Joe</given><family>Parker</family></name>
+          </guardianPerson>
+        </guardian>
+        <birthplace>
+          <place>
+            <addr><country>USA</country></addr>
+          </place>
+        </birthplace>
+        <languageCommunication>
+          <languageCode code="2.16.840.1.113883.1.11.11526"/>
+        </languageCommunication>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20000407130000+0500"/>
+    <assignedAuthor>
+      <id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c"/>
+      <code code="2.16.840.1.114222.4.11.1066"/>
+      <addr/>
+      <telecom/>
+      <assignedPerson>
+        <name><prefix>Dr.</prefix><given>Robert</given><family>Dolin</family></name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <informant>
+    <assignedEntity>
+      <id nullFlavor="ASKU"/>
+      <addr/>
+      <assignedPerson>
+        <name><given>Jack</given></name>
+      </assignedPerson>
+      <representedOrganization>
+        <id root="2.16.840.1.113883.4.6"/>
+        <id root="2.16.840.1.113883.19.5"/>
+        <name><prefix>J</prefix>Good Health Clinic</name>
+        <telecom/>
+      </representedOrganization>
+    </assignedEntity>
+  </informant>
+  <informant>
+    <relatedEntity classCode="AGNT"/>
+  </informant>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="2.16.840.1.113883.19.5"/>
+        <name>Good Health Clinic</name>
+        <telecom/>
+        <addr/>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <informationRecipient>
+    <intendedRecipient>
+      <informationRecipient>
+        <name/>
+      </informationRecipient>
+      <receivedOrganization>
+        <name/>
+      </receivedOrganization>
+    </intendedRecipient>
+  </informationRecipient>
+  <legalAuthenticator>
+    <time value="20000407130000+0500"/>
+    <signatureCode code="S"/>
+    <assignedEntity>
+      <id nullFlavor="ASKU"/>
+      <telecom/>
+      <assignedPerson>
+        <name/>
+      </assignedPerson>
+      <representedOrganization>
+        <id root="2.16.840.1.113883.19.5"/>
+        <name>Good Health Clinic</name>
+      </representedOrganization>
+    </assignedEntity>
+  </legalAuthenticator>
+  <authenticator>
+    <time/>
+    <signatureCode code="CC7"/>
+    <assignedEntity>
+      <id root="2.16.840.1.113883.4.6"/>
+      <addr/>
+      <telecom/>
+      <assignedPerson>
+        <name/>
+      </assignedPerson>
+    </assignedEntity>
+  </authenticator>
+  <inFulfillmentOf>
+    <order>
+      <id root="2.16.840.1.113883.4.7"/>
+    </order>
+  </inFulfillmentOf>
+  <documentationOf>
+    <serviceEvent classCode="PCPR">
+      <effectiveTime>
+        <low value="19320924"/>
+        <high value="20000407"/>
+      </effectiveTime>
+      <performer typeCode="PRF">
+        <functionCode code="PCP" codeSystem="2.16.840.1.113883.5.88"/>
+        <time>
+          <low value="1990"/>
+          <high value="20000407"/>
+        </time>
+        <assignedEntity>
+          <id root="2.16.840.1.113883.4.6"/>
+          <code code="2.16.840.1.113883.6.101"/>
+          <assignedPerson>
+            <name><prefix>Dr.</prefix><given>Robert</given><family>Dolin</family></name>
+          </assignedPerson>
+          <representedOrganization>
+            <id root="2.16.840.1.113883.19.5"/>
+            <name>Good Health Clinic</name>
+          </representedOrganization>
+        </assignedEntity>
+      </performer>
+    </serviceEvent>
+  </documentationOf>
+  <authorization>
+    <consent>
+      <statusCode code="2.16.840.1.113883.5.6"/>
+    </consent>
+  </authorization>
+  <componentOf>
+    <encompassingEncounter>
+      <id/>
+      <effectiveTime/>
+    </encompassingEncounter>
+  </componentOf>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.8"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
+          <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
+          <title>Medication</title>
+          <text><table border="1" width="100%"><thead><tr><th>Mediaction</th></tr></thead><tbody><tr><td>Ben</td></tr><tr><td>Exc</td></tr></tbody></table></text>
+          <entry typeCode="COMP">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <text>GLYC</text>
+              <statusCode code="GGG"/>
+              <priorityCode code="1"/>
+              <repeatNumber value="7"/>
+              <routeCode code="GJJ"/>
+              <rateQuantity value="70.0"/>
+              <maxDoseQuantity>
+                <numerator value="50.0"/>
+                <denominator value="30.0"/>
+              </maxDoseQuantity>
+              <administrationUnitCode xsi:type="CS" code="11"/>
+              <subject>
+                <awarenessCode code="BIO"/>
+                <relatedSubject>
+                  <code code="CEL"/>
+                </relatedSubject>
+              </subject>
+              <specimen>
+                <specimenRole>
+                  <specimenPlayingEntity>
+                    <code code="POL"/>
+                  </specimenPlayingEntity>
+                </specimenRole>
+              </specimen>
+              <consumable>
+                <manufacturedProduct>
+                  <manufacturedLabeledDrug>
+                    <code code="ZOL"/>
+                  </manufacturedLabeledDrug>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.16"/>
+          <templateId root="2.16.840.1.113883.10.20.22.2.4.1"/>
+          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"/>
+          <title>VitalSigns</title>
+          <text><table border="1" width="100%"><thead><tr><th>VitalSigns</th></tr></thead><tbody><tr><td>95</td></tr><tr><td>85</td></tr></tbody></table></text>
+          <entry>
+            <organizer classCode="BATTERY" moodCode="APT">
+              <code code="R7"/>
+              <statusCode code="COND2"/>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
